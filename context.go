@@ -11,7 +11,7 @@ import (
 
 // New returns a signal aware root context for services that listens for syscall
 // signals. Additional signals can be passed in.
-func NewContext(additionalSignals ...os.Signal) (context.Context, context.CancelFunc) {
+func New(additionalSignals ...os.Signal) (context.Context, context.CancelFunc) {
 	ctx, cancel := context.WithCancel(context.Background())
 
 	// Create the application context and start a signal handler.
