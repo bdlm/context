@@ -2,7 +2,7 @@ module github.com/bdlm/context
 
 go 1.21
 
-require github.com/bdlm/log/v2 v2.0.3
+require github.com/bdlm/log/v2 v2.0.4
 
 require (
 	github.com/bdlm/errors/v2 v2.0.1 // indirect
